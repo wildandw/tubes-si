@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Barlow, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #225e96;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 150px;
+  margin: 20px 0;
+}
+
+.user-info {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  width: 100%;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 15px 20px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #183b62;
+}
+
+.nav-menu ul li a.active {
+  background-color: #1d4a7e;
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+h1 {
+  color: #225e96;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: none;
+  height: 200px;
+}
+
+form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #225e96;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1d4a7e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #225e96;
+  color: #fff;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.product-table input[type="text"],
+.product-table input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.product-table td input[type="text"] {
+  font-size: 14px;
+}
+
+.product-table td input[type="date"] {
+  font-size: 14px;
+}
+
+.product-table button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #225e96;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-table button:hover {
+  background-color: #1d4a7e;
+}
+
+.product-table input[name="qty"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box; 
+  font-size: 14px;
+}
+
+.product-table select[name="statuspengajuan"],
+.product-table select[name="statuspengajuangudang"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box; 
+  font-size: 14px;
+}
+
+
+.edit-btn, .delete-btn {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-btn a, .delete-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  color: white;
+}
+
+.edit-btn i, .delete-btn i {
+  vertical-align: middle;
+}
+
+#form-penambahan {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="textarea"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-row input[type="textarea"] {
+  height: 80px;
+  resize: vertical; /* Allows vertical resize only */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
